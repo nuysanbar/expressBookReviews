@@ -53,7 +53,7 @@ regd_users.put("/auth/review/:isbn", (req, res) => {
         text:req.body.text
     }
     // books[isbn].reviews={...(books[isbn].reviews),obj1}
-    res.status(200).json({"message":"review by "+ obj1.username+ " is deleted" })
+    res.status(200).json({"message":"new review by "+ obj1.username+ " is added" })
 });
 module.exports.authenticated = regd_users;
 module.exports.isValid = isValid;
